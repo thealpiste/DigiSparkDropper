@@ -1,1 +1,1 @@
-# My Digispark bad usb script
+#Digispark bad usb script
